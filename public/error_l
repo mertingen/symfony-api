@@ -1,0 +1,28 @@
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP Fatal error:  Cannot declare class App\Controller\php, because the name is already in use in /var/www/app/src/Controller/NodeController.php on line 197
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP Stack trace:
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   1. {main}() /var/www/app/public/index.php:0
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/app/public/index.php:25
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/app/vendor/symfony/http-kernel/Kernel.php:193
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/app/vendor/symfony/http-kernel/Kernel.php:133
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   5. App\Kernel->buildContainer() /var/www/app/vendor/symfony/http-kernel/Kernel.php:550
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   6. App\Kernel->registerContainerConfiguration() /var/www/app/vendor/symfony/http-kernel/Kernel.php:659
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   7. Symfony\Component\Config\Loader\DelegatingLoader->load() /var/www/app/vendor/symfony/framework-bundle/Kernel/MicroKernelTrait.php:78
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   8. Symfony\Component\DependencyInjection\Loader\ClosureLoader->load() /var/www/app/vendor/symfony/config/Loader/DelegatingLoader.php:40
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP   9. App\Kernel->Symfony\Bundle\FrameworkBundle\Kernel\{closure:/var/www/app/vendor/symfony/framework-bundle/Kernel/MicroKernelTrait.php:59-78}() /var/www/app/vendor/symfony/dependency-injection/Loader/ClosureLoader.php:38
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  10. App\Kernel->configureContainer() /var/www/app/vendor/symfony/framework-bundle/Kernel/MicroKernelTrait.php:75
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  11. Symfony\Component\Config\Loader\DelegatingLoader->load() /var/www/app/src/Kernel.php:41
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  12. Symfony\Component\DependencyInjection\Loader\GlobFileLoader->load() /var/www/app/vendor/symfony/config/Loader/DelegatingLoader.php:40
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  13. Symfony\Component\DependencyInjection\Loader\GlobFileLoader->import() /var/www/app/vendor/symfony/dependency-injection/Loader/GlobFileLoader.php:27
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  14. Symfony\Component\DependencyInjection\Loader\GlobFileLoader->doImport() /var/www/app/vendor/symfony/config/Loader/FileLoader.php:90
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  15. Symfony\Component\DependencyInjection\Loader\YamlFileLoader->load() /var/www/app/vendor/symfony/config/Loader/FileLoader.php:151
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  16. Symfony\Component\DependencyInjection\Loader\YamlFileLoader->parseDefinitions() /var/www/app/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php:150
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  17. Symfony\Component\DependencyInjection\Loader\YamlFileLoader->parseDefinition() /var/www/app/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php:229
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  18. Symfony\Component\DependencyInjection\Loader\YamlFileLoader->registerClasses() /var/www/app/vendor/symfony/dependency-injection/Loader/YamlFileLoader.php:567
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  19. Symfony\Component\DependencyInjection\Loader\YamlFileLoader->findClasses() /var/www/app/vendor/symfony/dependency-injection/Loader/FileLoader.php:57
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  20. Symfony\Component\DependencyInjection\ContainerBuilder->getReflectionClass() /var/www/app/vendor/symfony/dependency-injection/Loader/FileLoader.php:150
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  21. Symfony\Component\Config\Resource\ClassExistenceResource->isFresh() /var/www/app/vendor/symfony/dependency-injection/ContainerBuilder.php:353
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  22. class_exists() /var/www/app/vendor/symfony/config/Resource/ClassExistenceResource.php:78
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  23. spl_autoload_call() /var/www/app/vendor/symfony/config/Resource/ClassExistenceResource.php:78
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  24. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/app/vendor/symfony/config/Resource/ClassExistenceResource.php:78
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  25. Composer\Autoload\ClassLoader->loadClass() /var/www/app/vendor/symfony/debug/DebugClassLoader.php:163
+[02-Sep-2019 23:42:46 Asia/Riyadh] PHP  26. Composer\Autoload\includeFile() /var/www/app/vendor/composer/ClassLoader.php:322
